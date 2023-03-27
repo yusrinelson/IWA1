@@ -1,0 +1,70 @@
+:root{
+    --color-white: white;
+    --color-dark-grey: rgb(26, 24, 24);
+    --color-medium-grey: rgb(66, 64, 64);
+    --color-light-grey: rgb(163, 159, 159);
+    --color-blue: rgba(0, 60, 255, 0.61);
+    --color-red: red;
+}
+
+*{
+    box-sizing: border-box;
+}
+header h1{
+    margin: 0;
+    background-color: var(--color-light-grey);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+body{
+    margin:0;
+    background-color: var(--color-dark-grey);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.tally-box {
+    background: var(--color-medium-grey);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+#counter-value{
+    width: 100%;
+    height:200px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    background: none;
+    color: var(--color-white);
+    border-width: 0;
+    border-right:1px solid black;
+    border-left: 1px solid black;
+}
+.counter-button{
+    background: none;
+    font-size: 2rem;
+    color: var(--color-white);
+    border-width: 0;
+    transition: transform 0.3s;
+    transform: translateY(0);
+}
+
+.counter-button:active{
+    background: var(--color-blue);
+    transform: translateY(2%);
+}
+.counter-button:disabled{
+    background: var(--color-red);
+    opacity: 0.2;
+}
+
+footer{
+    background-color: var(--color-light-grey);
+    padding: 30px;
+    font-size: 1rem;
+    text-align: center;
+}
